@@ -4,7 +4,7 @@ import Sidenav from "./sidenav";
 
 export default function Home(){
     return(
-        <div className="bckgnd  h-screen flex" >
+        <div className="bckgnd  h-screen lg:flex" >
         <Sidenav />
         <HomeBody />
         </div>
