@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter} from '@fortawesome/free-brands-svg-icons'
 
-export default function ContactIcon (){
+export default function SocialHandles (){
     return (
         <div className='flex justify-center pt-3 '>
         <a href='https://linkedin.com/in/nwanuma-ugochukwu'> <FontAwesomeIcon icon={faLinkedin} size="xl"  style={{ color: '#ffff' }} className='pr-3'/></a>

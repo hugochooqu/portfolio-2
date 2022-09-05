@@ -1,5 +1,5 @@
 import React from 'react';
-import pic from './assets/IMG_20210213_081406 (2).JPG'
+import pic from './../../assets/IMG_20210213_081406 (2).JPG'
 
 export default function Pics (){
     return(

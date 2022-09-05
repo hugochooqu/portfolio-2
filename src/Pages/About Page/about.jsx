@@ -1,9 +1,6 @@
 import React from 'react'
-import ContactButton from './contactmebutton'
-import CvButton from './cvbutton'
-import HomeButton from './homebutton'
-import ProjectButton from './projectbutton'
-import Sidenav from './sidenav'
+
+import Sidenav from '../../components/Navigation bars component/side-navigation-bar'
 
 export default function About(){
     return (
@@ -30,23 +27,7 @@ export default function About(){
                         <p className='lg:text-right text-right lg:text-neutral-100 text-neutral-900'>HTML5, CSS3, JavaScript, Tailwind, React, NEXT.js...</p>
                 
             </div>
-            <div className='lg:hidden float-right space-y-3 pr-7 pt-6'>
-               <div>
-                <HomeButton />
-               </div>
-                <div>
-                   <ProjectButton />  
-                </div>
-                <div>
-                   <CvButton />
-                </div>
-                <div>
-                    <ContactButton />
-                </div>
-
-                
-
-            </div>
+         
         </div>
     )
 }

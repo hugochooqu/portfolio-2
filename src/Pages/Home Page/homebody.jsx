@@ -1,8 +1,6 @@
 import React from 'react';
-import AboutButton from './aboutbutton';
-import ContactButton from './contactmebutton';
-import CvButton from './cvbutton';
-import ProjectButton from './projectbutton';
+
+import CustomButton from '../../components/Custom-Button Component/CustomButton';
 
 export default function HomeBody(){
     return(
@@ -13,10 +11,8 @@ export default function HomeBody(){
            <br/>
             <p className='text-right text-lg lg:text-2xl'>FRONT-END DEVELOPER</p>
            <div className='pt-32 lg:pt-6 float-right  space-y-3'>
-                <div className='' ><ContactButton  /></div>
-                <div className='lg:hidden' ><ProjectButton /></div>
-                <div className='lg:hidden' ><CvButton /></div>
-                <div className='lg:hidden' ><AboutButton /></div> 
+                <CustomButton>Contact me</CustomButton>
+                 
            </div>
         </div>
     )

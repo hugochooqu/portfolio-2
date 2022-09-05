@@ -2,11 +2,8 @@ import { faGithub, faLinkedin, faTwitter, faWhatsapp, } from "@fortawesome/free-
 import { faEnvelope, } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import Sidenav from "./sidenav";
-import AboutButton from "./aboutbutton";
-import HomeButton from "./homebutton";
-import ProjectButton from "./projectbutton";
-import CvButton from "./cvbutton";
+import Sidenav from "../../components/Navigation bars component/side-navigation-bar";
+
 
 export default function Contact(){
     return(
@@ -40,21 +37,7 @@ export default function Contact(){
                <p ><FontAwesomeIcon icon={faWhatsapp} solid  style={{ color: '#7C3AED' }}  /> +234-816-868-7346 </p>  
             </div> 
 
-                <div className="lg:hidden pt-44 float-right space-y-3">
-                     <div >
-                    <HomeButton />
-                   </div> 
-                   
-                   <div >
-                   <ProjectButton />
-                   </div> 
-                   <div >
-                  <CvButton />
-                   </div> 
-                   <div >
-                    <AboutButton />
-                   </div>
-                </div>
+               
                
                     
                 
