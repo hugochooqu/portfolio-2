@@ -1,6 +1,6 @@
 import React from "react";
 import HomeBody from "./homebody";
-import Sidenav from "./sidenav";
+import Sidenav from "../../components/Navigation bars component/side-navigation-bar";
 
 export default function Home(){
     return(

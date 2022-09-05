@@ -1,13 +1,19 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
-import ContactIcon from './contacticon';
-import Pics from './profilepics';
+
+import Pics from '../Profile-picture component/profilePicture';
+import SocialHandles from '../Social-handles Component/social-handles';
 
 
-export default function Sidenav(){
+export default function SideNavigationBar(){
     return(
-        <div className='  bg-violet-700 lg:h-screen lg:w-96 lg:bg-violet-800/60' >
+        <div className='w-screen h-12  bg-violet-700 lg:h-screen lg:w-96 lg:bg-violet-800/60' >
+           <div className='float-right p-3 lg:hidden'>
+            <FontAwesomeIcon icon={faBars} size='xl'/>
+           </div>
             <Pics />
-            <div className=' lg:block hidden '  id='#sidenav'>
+            <div className=' lg:block hidden ' >
             <h1 className='lg:font-semibold lg:text-xl text-slate-100 pt-2 text-center brightness-200 tracking-tighter'><a href='/'>UGOCHUKWU VICTOR</a></h1>
             <p className='text-center text-neutral-100 text-lg pt-1'>FRONT-END WEB DEVELOPER</p>
             <nav>
@@ -32,7 +38,7 @@ export default function Sidenav(){
                 <p className='text-xs lg:pt-24 text-center text-neutral-100 '>
                     GET IN TOUCH
                 </p>
-                <ContactIcon />
+                <SocialHandles />
             </div>
         </div>
 
